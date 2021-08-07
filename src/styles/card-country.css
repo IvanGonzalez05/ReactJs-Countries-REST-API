@@ -1,0 +1,37 @@
+.cards-list-container {
+    display: grid;
+    grid-gap: 3rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+}
+
+.card-country-container {
+    min-width: 240px;
+    max-width: 1fr;
+    overflow: hidden;
+    border-radius: 7px;
+    box-shadow: 0px 0px 15px gray;
+}
+
+.flag-card {
+    width: 100%;
+}
+
+.country-data-container {
+    padding: 7%;
+}
+
+.country-name {
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.bold-text {
+    font-weight: 600;
+}
+
+/* @media only screen and (min-width: 900px) {
+    .cards-list-container {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 320px));
+    }
+} */
