@@ -29,9 +29,3 @@
 .bold-text {
     font-weight: 600;
 }
-
-/* @media only screen and (min-width: 900px) {
-    .cards-list-container {
-        grid-template-columns: repeat(auto-fit, minmax(240px, 320px));
-    }
-} */
