@@ -7,6 +7,7 @@ export const getAllCountries = (setCountries, setIsPending) => {
         // 10 of them
         setCountries([json[65], json[239], json[84], json[77], 
                     json[31], json[103], json[0], json[48], json[212], json[247]]);
+        setIsPending(false);
     })
     .catch(error => {
         console.error(`Error fetchin all countries: ${error}`)
@@ -43,7 +44,6 @@ export const getCountryDetails = (endpoint, setCountry, setIsPending) => {
             "languages": json[0].languages.map(lang => lang.name),
             "borderCountries": json[0].borders,
         })
-        console.log(json)
         setIsPending(false);
     })
     .catch(error => {
