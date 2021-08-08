@@ -27,7 +27,7 @@ const CountryDetails = () => {
 
         // returning an unmount function that abort any process left when component unmounts
         return () => abortCont.abort();
-    }, [isPending]);
+    }, [isPending, country]);
 
     if (isPending){
         return (

@@ -22,7 +22,7 @@ const Home = () => {
 
         // returning an unmount function that abort any process left when component unmounts
         return () => abortCont.abort();
-    }, [region]);
+    }, [region, countries]);
 
     return (
         <div>
