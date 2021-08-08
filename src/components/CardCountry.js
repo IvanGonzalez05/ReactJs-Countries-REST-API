@@ -1,5 +1,6 @@
 import '../styles/card-country.css';
 import { NavLink } from 'react-router-dom';
+import { formatNumber } from '../utils/formatNumber';
 
 const CardCountry = ({ flag, name, population, region, capital}) => {
     return (
@@ -11,7 +12,7 @@ const CardCountry = ({ flag, name, population, region, capital}) => {
             </NavLink>
             <div className="country-data-container">
                 <NavLink to={`/details/${name}`} className="country-name">{name}</NavLink>
-                <p className="country-population"> <span className="bold-text">Population:</span> {population}</p>
+                <p className="country-population"> <span className="bold-text">Population:</span> {formatNumber(population)}</p>
                 <p className="country-region"><span className="bold-text">Region:</span> {region}</p>
                 <p className="country-capital"><span className="bold-text">Capital:</span>: {capital}</p>
             </div>

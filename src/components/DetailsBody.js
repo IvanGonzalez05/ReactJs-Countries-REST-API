@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { formatNumber } from '../utils/formatNumber';
 
 const DetailsBody = ({flag, name, nativeName, population, region, 
                 subRegion, capital, topLevelDomain, currencies, languages, borders}) => {
@@ -9,7 +10,7 @@ const DetailsBody = ({flag, name, nativeName, population, region,
                 <h2 className="country-name">{name}</h2>
                 <div className="main-details">
                     <p className="nativeName"><span className="bold-text">Native Name:</span> {nativeName}</p>
-                    <p className="population"><span className="bold-text">Population:</span> {population}</p>
+                    <p className="population"><span className="bold-text">Population:</span> {formatNumber(population)}</p>
                     <p className="region"><span className="bold-text">Region:</span> {region}</p>
                     <p className="sub-region"><span className="bold-text">Sub Region:</span> {subRegion}</p>
                     <p className="capital"><span className="bold-text">Capital:</span> {capital}</p>
