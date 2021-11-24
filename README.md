@@ -1,4 +1,4 @@
-# Frontend Mentor - REST Countries API
+# ReactJs + REST Countries API
 
 ## Welcome! 👋
 
